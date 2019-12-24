@@ -1,7 +1,7 @@
 package com.math.operation;
 
 public class Math {
-	
+	//to check if the number is even or not
 	public int even(int n) {
 		if(n%2==0)
 			return 1;
