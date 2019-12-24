@@ -3,9 +3,9 @@ pipeline{
 	stages{
 		stage('Build'){
 			steps{
-				withMaven(maven : 'maven1'){
-					bat 'mvn clean'
-				}
+				def mvnHome = tool name: 'maven1', type: 'maven'
+				bat "%{mvnHome}%/bin/mvn clean'
+			
 			}
 		}
 	}
