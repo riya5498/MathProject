@@ -20,11 +20,11 @@ pipeline {
 			}
 		}
 		
-		stage('Package stage'){
+		stage('Sonarqube stage'){
 		
 			steps{
 				withMaven(maven: 'maven1'){
-					sh 'mvn install'
+					sh 'mvn sonar:sonar'
 				}
 			}
 		}
