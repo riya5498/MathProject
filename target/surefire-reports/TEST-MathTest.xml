@@ -27,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\hp\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf2662543493440825125.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\hp\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7965707587577827460.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_201\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk1.8.0_201/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_201/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_201/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\hp\gcc\bin;C:\Users\hp\gcc\libexec\gcc\x86_64-w64-mingw32\8.1.0;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\GTK2-Runtime\lib;C:\Program Files\Dart\dart-sdk\bin;C:\flutter\bin;C:\Users\hp\Anaconda3;C:\Users\hp\Anaconda3\Library\mingw-w64\bin;C:\Users\hp\Anaconda3\Library\usr\bin;C:\Users\hp\Anaconda3\Library\bin;C:\Users\hp\Anaconda3\Scripts;C:\Users\hp\Anaconda3\New folder;C:\Users\hp\Anaconda3\New folder\Library\mingw-w64\bin;C:\Users\hp\Anaconda3\New folder\Library\usr\bin;C:\Users\hp\Anaconda3\New folder\Library\bin;C:\Users\hp\Anaconda3\New folder\Scripts;C:\Users\hp\AppData\Local\Microsoft\WindowsApps;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hp\AppData\Local\Markdown Monster;C:\Program Files\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;;C:\Users\hp\Downloads\eclipse-java-neon-3-win32-x86_64\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -44,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_201\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean test sonar:sonar"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean test install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>

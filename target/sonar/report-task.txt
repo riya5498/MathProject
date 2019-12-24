@@ -1,6 +1,0 @@
-projectKey=com.math.operation:math-operations
-serverUrl=http://localhost:9000
-serverVersion=7.6.0.21501
-dashboardUrl=http://localhost:9000/dashboard?id=com.math.operation%3Amath-operations
-ceTaskId=AW822oaWzzrMD2aNdvbL
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AW822oaWzzrMD2aNdvbL
