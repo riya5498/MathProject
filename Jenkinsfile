@@ -1,33 +1,14 @@
-pipeline {
-	agent any
-	
-	stages {
-		stage ('Compile stage'){
-			
-			steps{
-				withMaven(maven: 'maven1'){
-					sh 'mvn clean'
-				}
-			}
-		}
-		
-		stage('Test stage'){
-		
-			steps{
-				withMaven(maven: 'maven1'){
-					sh 'mvn test'
-				}
-			}
-		}
-		
-		stage('Sonarqube stage'){
-		
-			steps{
-				withMaven(maven: 'maven1'){
-					sh 'mvn sonar:sonar'
-				}
-			}
-		}
+node {
+	stage ('SCM checkout'){
+		git 'https://github.com/riya5498/MathProject.git'
+	}	
+	stage ('Build'){
+		def mvnHome = tool name: 'maven1', type: 'maven'
+		sh "$(mvnHome)/bin/mvn clean"
 	}
+	stage ('Test'){
+		def mvnHome = tool name: 'maven1', type: 'maven'
+		sh "$(mvnHome)/bin/mvn test"	
+		
 }
 		
