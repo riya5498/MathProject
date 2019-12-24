@@ -8,6 +8,7 @@ public class Math {
 		else
 			return 0; 
 	}
+	//to get the factorial of the number
 	public int factorial(int n){
         int fact=1;
         for(int i=n; i>0; i--)
