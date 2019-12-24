@@ -8,7 +8,7 @@ public class Math {
 		else
 			return 0; 
 	}
-	//to get the factorial of the number
+	
 	public int factorial(int n){
         int fact=1;
         for(int i=n; i>0; i--)
@@ -17,6 +17,7 @@ public class Math {
         }
         return fact;
 	}
+	//to check if the number is paindrome or not
 	public int palin(int n){
 		int rem;
 		int rev=0;
