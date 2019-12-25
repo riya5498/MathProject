@@ -18,8 +18,6 @@ pipeline {
       }
 	stage('Test') {
          steps {
-            // Get some code from a GitHub repository
-            //git 'https://github.com/jglick/simple-maven-project-with-tests.git'
 
             // To run Maven on a Windows agent, use
              bat "mvn -Dmaven.test.failure.ignore=true test"
@@ -27,8 +25,6 @@ pipeline {
 	}
 	stage('Code quality check') {
          steps {
-            // Get some code from a GitHub repository
-            //git 'https://github.com/jglick/simple-maven-project-with-tests.git'
 
             // To run Maven on a Windows agent, use
              bat "mvn -Dmaven.test.failure.ignore=true sonar:sonar"
@@ -36,8 +32,6 @@ pipeline {
 	}
 	stage('Package') {
          steps {
-            // Get some code from a GitHub repository
-            //git 'https://github.com/jglick/simple-maven-project-with-tests.git'
 
             // To run Maven on a Windows agent, use
              bat "mvn -Dmaven.test.failure.ignore=true package"
