@@ -2,7 +2,7 @@ pipeline {
    agent any
 
    tools {
-      // Install the Maven version configured as "maven1" and add it to the path.
+      // Install the Maven version configured as "maven1" and add it to the path
       maven "maven1"
    }
 
