@@ -1,56 +1,60 @@
-pipeline {
-   agent any
+package com.math.operation;
 
-   tools {
-      // Install the Maven version configured as "maven1" and add it to the path.
-      maven "maven1"
-   }
+public class Math {
 
-   stages {
-      stage('Build') {
-         steps {
-            // Get some code from a GitHub repository
-            git 'https://github.com/riya5498/MathProject.git'
-
-            // To run Maven on a Windows agent, use
-             bat "mvn -Dmaven.test.failure.ignore=true clean"
-         }
-      }
-	stage('Test') {
-         steps {
-            // Get some code from a GitHub repository
-            git 'https://github.com/riya5498/MathProject.git'
-
-            // To run Maven on a Windows agent, use
-             bat "mvn -Dmaven.test.failure.ignore=true test"
-         }
+	/*
+	 * Method to find if the number is even or not
+	 */
+	public int even(int n) {
+		if (n % 2 == 0)
+			return 1;
+		else
+			return 0;
 	}
-	stage('Code quality check') {
-         steps {
-            // Get some code from a GitHub repository
-            git 'https://github.com/riya5498/MathProject.git'
-
-            // To run Maven on a Windows agent, use
-             bat "mvn -Dmaven.test.failure.ignore=true sonar:sonar"
-         }
+	
+	/*
+	 * Method to find the factorial of the number
+	 */
+	public int factorial(int n) {
+		int fact = 1;
+		for (int i = n; i > 0; i--) {
+			fact = fact * i;
+		}
+		return fact;
 	}
-	stage('Package') {
-         steps {
-            // Get some code from a GitHub repository
-            git 'https://github.com/riya5498/MathProject.git'
 
-            // To run Maven on a Windows agent, use
-             bat "mvn -Dmaven.test.failure.ignore=true package"
-	 }
-	 post {
-            // If Maven was able to run the tests, even if some of the test
-            // failed, record the test results and archive the jar file.
-            success {
-               junit '**/target/surefire-reports/TEST-*.xml'
-               archiveArtifacts 'target/*.jar'
-	    }
-	 }
+	/*
+	 * Method to check if the number is palindrome or not
+	 */
+	public int palin(int n) {
+		int rem;
+		int rev = 0;
+		int orig;
+		orig = n;
+		while (n > 0) {
+			rem = n % 10;
+			rev = rev * 10 + rem;
+			n = n / 10;
+		}
+		if (rev == orig)
+			return 1;
+		else
+			return 0;
 	}
-   }
+
+	/*
+	 * Method to check if the number is Prime or not
+	 */
+	public boolean primeNo(int n) {
+		boolean flag = true;
+		for (int i = 2; i <= n / 2; i++) {
+			if (n % i == 0) {
+				flag = false;
+				break;
+			}
+		}
+		return flag;
+	}
 }
+
 
