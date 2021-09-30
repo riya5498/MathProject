@@ -3,7 +3,7 @@ pipeline {
 
    tools {
       // Install the Maven version configured as "maven1" and add it to the path
-      maven "maven1"
+      maven "M3"
    }
 
    stages {
