@@ -20,14 +20,21 @@ pipeline {
          steps {
 
             // To run Maven on a Windows agent, use
-             echo "Test done"
+             sh "mvn -Dmaven.test.failure.ignore=true test"
+         }
+	}
+	stage('Code quality check') {
+         steps {
+
+            // To run Maven on a Windows agent, use
+             bat "mvn -Dmaven.test.failure.ignore=true sonar:sonar"
          }
 	}
 	stage('Package') {
          steps {
 
             // To run Maven on a Windows agent, use
-             echo "package done"
+             bat "mvn -Dmaven.test.failure.ignore=true package"
          }
 
          post {
